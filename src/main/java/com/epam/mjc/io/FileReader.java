@@ -43,7 +43,7 @@ public class FileReader {
                             phone = Long.parseLong(value);
                             break;
                         default:
-                            LOGGER.warning("unknown key " + key);
+                            LOGGER.warning(String.format("unknown key: %s" , key));
                             break;
                     }
                 }
