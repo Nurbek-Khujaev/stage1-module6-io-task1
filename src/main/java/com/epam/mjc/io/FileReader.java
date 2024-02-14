@@ -43,7 +43,9 @@ public class FileReader {
                             phone = Long.parseLong(value);
                             break;
                         default:
-                            LOGGER.warning(String.format("unknown key: %s" , key));
+                            if (LOGGER.isLoggable(java.util.logging.Level.WARNING)) {
+                                LOGGER.warning(String.format("Unrecognized key: %s", key));
+                            }
                             break;
                     }
                 }
