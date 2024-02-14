@@ -36,6 +36,9 @@ public class FileReader {
                         case "Phone":
                             phone = Long.parseLong(value);
                             break;
+                        default:
+                            System.out.println("unknown key " + key);
+                            break;
                     }
                 }
             }
